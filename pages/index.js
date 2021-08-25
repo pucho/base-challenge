@@ -12,7 +12,7 @@ export default function Home(props) {
         justifyContent="center"
       >
         {error && <h1>{error}</h1>}
-        {data.map((post) => {
+        {data?.map((post) => {
           return <PostCard post={post} key={post.id} />;
         })}
       </Flex>
